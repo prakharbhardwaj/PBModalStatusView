@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="31f-tt-4mF">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ja7-rs-hoZ" customClass="PBModalStatusView" customModule="PBModalStatus" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHH-vd-dxW">
+                        <rect key="frame" x="10" y="160" width="210" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gEB-RI-sAh">
+                        <rect key="frame" x="50" y="10" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="JkA-7a-TOv"/>
+                            <constraint firstAttribute="height" constant="130" id="UZ7-Oc-ZZa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Optional multiline capable subhead label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Ytx-Sj-6ZB">
+                        <rect key="frame" x="10" y="186" width="210" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jHH-vd-dxW" firstAttribute="top" secondItem="gEB-RI-sAh" secondAttribute="bottom" constant="20" id="HeN-dT-9PT"/>
+                    <constraint firstAttribute="trailing" secondItem="jHH-vd-dxW" secondAttribute="trailing" constant="10" id="Ncu-w5-yWN"/>
+                    <constraint firstItem="Ytx-Sj-6ZB" firstAttribute="leading" secondItem="Ja7-rs-hoZ" secondAttribute="leading" constant="10" id="TTZ-s2-hN4"/>
+                    <constraint firstItem="gEB-RI-sAh" firstAttribute="centerX" secondItem="Ja7-rs-hoZ" secondAttribute="centerX" id="V6E-g6-sfp"/>
+                    <constraint firstItem="Ytx-Sj-6ZB" firstAttribute="top" secondItem="jHH-vd-dxW" secondAttribute="bottom" constant="5" id="YPs-p6-d5k"/>
+                    <constraint firstItem="jHH-vd-dxW" firstAttribute="leading" secondItem="Ja7-rs-hoZ" secondAttribute="leading" constant="10" id="ePa-z2-KB4"/>
+                    <constraint firstItem="gEB-RI-sAh" firstAttribute="top" secondItem="Ja7-rs-hoZ" secondAttribute="top" constant="10" id="f2o-zn-6e9"/>
+                    <constraint firstAttribute="trailing" secondItem="Ytx-Sj-6ZB" secondAttribute="trailing" constant="10" id="pCD-Cz-23y"/>
+                    <constraint firstItem="Ytx-Sj-6ZB" firstAttribute="centerX" secondItem="jHH-vd-dxW" secondAttribute="centerX" id="uvz-n4-0L4"/>
+                    <constraint firstItem="jHH-vd-dxW" firstAttribute="centerX" secondItem="gEB-RI-sAh" secondAttribute="centerX" id="wDi-Kr-C33"/>
+                </constraints>
+                <connections>
+                    <outlet property="headlineLabel" destination="jHH-vd-dxW" id="afV-PX-Z4t"/>
+                    <outlet property="statusImage" destination="gEB-RI-sAh" id="boV-rq-QxJ"/>
+                    <outlet property="subheadLabel" destination="Ytx-Sj-6ZB" id="ASA-Aq-ZtX"/>
+                </connections>
+            </view>
+            <blurEffect style="regular"/>
+            <point key="canvasLocation" x="148.55072463768118" y="64.620535714285708"/>
+        </visualEffectView>
+    </objects>
+</document>
